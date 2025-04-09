@@ -1,0 +1,49 @@
+@model App.Domain.RobotMapApp
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>RobotMapApp</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="RobotId" class="control-label"></label>
+                <select asp-for="RobotId" class="form-select" asp-items="ViewBag.RobotId"></select>
+                <span asp-validation-for="RobotId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MapId" class="control-label"></label>
+                <select asp-for="MapId" class="form-select" asp-items="ViewBag.MapId"></select>
+                <span asp-validation-for="MapId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppId" class="control-label"></label>
+                <select asp-for="AppId" class="form-select" asp-items="ViewBag.AppId"></select>
+                <span asp-validation-for="AppId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DisplayName" class="control-label"></label>
+                <input asp-for="DisplayName" class="form-control" />
+                <span asp-validation-for="DisplayName" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

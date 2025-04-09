@@ -1,0 +1,80 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="PageTitle" xml:space="preserve">
+        <value>Profiil</value>
+    </data>
+    <data name="Profile" xml:space="preserve">
+        <value>Profiil</value>
+    </data>
+    <data name="PhoneNumber" xml:space="preserve">
+        <value>Telefoninumber</value>
+    </data>
+    <data name="Username" xml:space="preserve">
+        <value>Kasutajanimi</value>
+    </data>
+    <data name="Save" xml:space="preserve">
+        <value>Salvesta</value>
+    </data>
+    <data name="Your profile has been updated" xml:space="preserve">
+        <value>Profiil uuendatud</value>
+    </data>
+    <data name="Unexpected error when trying to set phone number" xml:space="preserve">
+        <value>Ootamatu viga telefoninumbri salvestamisel.</value>
+    </data>
+    <data name="Unable to load user with ID" xml:space="preserve">
+        <value>Ei suuda laadida kasutajat ID-ga '{0}'</value>
+    </data>
+    <data name="GivenName" xml:space="preserve">
+        <value>Eesnimi</value>
+    </data>
+    <data name="Surname" xml:space="preserve">
+        <value>Perekonnanimi</value>
+    </data>
+    <data name="Unexpected error when trying to update profile data" xml:space="preserve">
+        <value>Ootamatu viga profiili uuendamisel.</value>
+    </data>
+    <data name="DateOfBirth" xml:space="preserve">
+        <value>Sünniaeg</value>
+    </data>
+    <data name="Gender" xml:space="preserve">
+        <value>Sugu</value>
+    </data>
+    <data name="Country" xml:space="preserve">
+        <value>Riik</value>
+    </data>
+    <data name="PunchUnitEmitNo" xml:space="preserve">
+        <value>Emit number</value>
+    </data>
+    <data name="PunchUnitSiNo" xml:space="preserve">
+        <value>SportIdent number</value>
+    </data>
+    <data name="IOFCode" xml:space="preserve">
+        <value>International Orienteering Federation kood</value>
+    </data>
+    <data name="EOFCode" xml:space="preserve">
+        <value>Estonian Orienteering Federation kood</value>
+    </data>
+    <data name="Mandatory" xml:space="preserve">
+        <value>Kohustuslik</value>
+    </data>
+    <data name="ProfileNeedsUpdateExplanation" xml:space="preserve">
+        <value>Sa sattusid siia, sest su profiil vajab uuendamist.</value>
+    </data>
+    <data name="LastUpdatedAt" xml:space="preserve">
+        <value>Viimati uuendatud:</value>
+    </data>
+    <data name="ReturnToContest" xml:space="preserve">
+        <value>Mine tagasi võistluse juurde</value>
+    </data>
+</root>

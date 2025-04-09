@@ -1,0 +1,44 @@
+@model App.Domain.AppVersion
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>AppVersion</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <input type="hidden" asp-for="ApkVersionName" value="-"/>
+            <div class="form-group">
+                <label asp-for="AppId" class="control-label"></label>
+                <select asp-for="AppId" class="form-select" asp-items="ViewBag.AppId"></select>
+            </div>
+            
+            <div class="form-group">
+                <label for="file" class="control-label">APK file</label>
+                <input type="file" id="file" name="file" class="form-control"/>
+            </div>
+
+            <div class="form-group">
+                <label for="meta" class="control-label">MetaData json</label>
+                <input type="file" id="meta" name="meta" class="form-control"/>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

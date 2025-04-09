@@ -1,0 +1,59 @@
+@model WebApp.Areas.Admin.ViewModels.NewsViewModel
+
+
+@{
+    ViewData["Title"] = "News";
+}
+
+<h1>News</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NewsItems[0].Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NewsItems[0].Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NewsItems[0].Description)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.NewsItems[0].PubDate)<br/>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NewsItems[0].Link)<br/>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NewsItems[0].ShortLink)
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.NewsItems)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PubDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Link)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShortLink)
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

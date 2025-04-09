@@ -1,0 +1,78 @@
+@model IEnumerable<App.Domain.WebLink>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.WebLinkName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WebLinkDisplayName)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.IsIframe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ZoomFactor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TextZoom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WebLinkCategory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Organization)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.WebLinkName)
+            </td>
+            <td>
+                @item.WebLinkDisplayName
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsIframe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ZoomFactor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TextZoom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WebLinkCategory!.CategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Organization!.OrgName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                @if (item.IsIframe)
+                {
+                    <text> | </text>
+                    <a asp-area="" asp-action="ViewIframe" asp-controller="Home" asp-route-id="@item.Id">View iframe</a>
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

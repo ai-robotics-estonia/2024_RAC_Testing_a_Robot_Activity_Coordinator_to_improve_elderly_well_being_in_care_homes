@@ -1,0 +1,26 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="RecoveryCodeVerification" xml:space="preserve">
+        <value>Taastamise koodi kinnitus</value>
+    </data>
+    <data name="LogIn" xml:space="preserve">
+        <value>Logi sisse</value>
+    </data>
+    <data name="YouHaveRequested" xml:space="preserve">
+        <value>Taastamise koodiga sisselogimine. Seda sisse logimist ei mäletata kuni sa ei anna autentimise rakendusest koodi või kuni sa ei eemalda kahe astmelist autentimist ja logid sisse uuesti.</value>
+    </data>
+    <data name="RecoveryCode" xml:space="preserve">
+        <value>Taastamise kood</value>
+    </data>
+</root>

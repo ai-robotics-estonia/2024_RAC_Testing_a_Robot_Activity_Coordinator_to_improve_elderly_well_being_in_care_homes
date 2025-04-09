@@ -1,0 +1,88 @@
+@using System.Globalization
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model WebApp.Areas.Admin.ViewModels.LogEventStatsViewModel
+@{
+    ViewData["Title"] = "Stats";
+}
+
+<h1>Temi event statistics</h1>
+<form asp-action="Stats" method="get">
+    <div class="row">
+        <div class="col-md-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CreatedAtFrom" class="control-label"></label>
+                <input type="text" asp-for="CreatedAtFrom" value="@Model.CreatedAtFrom.ToString("o", CultureInfo.InvariantCulture)" class="form-control"/>
+                <span asp-validation-for="CreatedAtFrom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedAtTo" class="control-label"></label>
+                <input type="text" asp-for="CreatedAtTo" value="@Model.CreatedAtTo.ToString("o", CultureInfo.InvariantCulture)" class="form-control"/>
+                <span asp-validation-for="CreatedAtTo" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="RobotId" class="control-label"></label>
+                <select asp-for="RobotId" class="form-select" asp-items="Model.RobotSelectList">
+                    <option>--- Any ---</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MapId" class="control-label"></label>
+                <select asp-for="MapId" class="form-select" asp-items="Model.MapSelectList">
+                    <option>--- Any ---</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AppId" class="control-label"></label>
+                <select asp-for="AppId" class="form-select" asp-items="Model.AppSelectList">
+                    <option>--- Any ---</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="submit" value="Update" class="btn btn-primary"/>
+            </div>
+        </div>
+    </div>
+</form>
+
+<hr/>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>
+            Key
+        </th>
+        <th>
+            Count
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Stats)
+    {
+        <tr>
+            <td>
+                @item.Key
+            </td>
+            <td>
+                <a asp-action="DetailStats" asp-route-key="@item.Key" asp-route-CreatedAtFrom="@Model.CreatedAtFrom.ToString("o", CultureInfo.InvariantCulture)" asp-route-CreatedAtTo="@Model.CreatedAtTo.ToString("o", CultureInfo.InvariantCulture)" asp-route-RobotId="@Model.RobotId" asp-route-MapId="@Model.MapId" asp-route-AppId="@Model.AppId">@item.Count</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

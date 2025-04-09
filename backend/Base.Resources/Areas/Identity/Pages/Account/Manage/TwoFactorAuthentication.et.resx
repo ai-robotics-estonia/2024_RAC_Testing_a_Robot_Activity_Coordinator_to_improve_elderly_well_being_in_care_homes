@@ -1,0 +1,65 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="YouMust" xml:space="preserve">
+        <value>Sa pead</value>
+    </data>
+    <data name="GenerateANewSetOfRecoveryCodes" xml:space="preserve">
+        <value>genereerima uued taastamise koodid</value>
+    </data>
+    <data name="BeforeLoginWithRecoveryCode" xml:space="preserve">
+        <value> enne kui sa saad sisse logida taastamise koodiga.</value>
+    </data>
+    <data name="TwoFactorAuthenticationTitle" xml:space="preserve">
+        <value>Kahe astmeline autentimine</value>
+    </data>
+    <data name="YouHaveNoRecoveryCodesLeft" xml:space="preserve">
+        <value>Sul pole taastamise koode järel</value>
+    </data>
+    <data name="YouHaveOneRecoveryCodeLeft" xml:space="preserve">
+        <value>Sul on 1 taastamise kood järel.</value>
+    </data>
+    <data name="YouCan" xml:space="preserve">
+        <value>Sa saad</value>
+    </data>
+    <data name="YouHave" xml:space="preserve">
+        <value>Sul on</value>
+    </data>
+    <data name="RecoveryCodesLeft" xml:space="preserve">
+        <value> taastamise koodi järel.</value>
+    </data>
+    <data name="YouShould" xml:space="preserve">
+        <value>Sa peaksid</value>
+    </data>
+    <data name="ForgetThisBrowser" xml:space="preserve">
+        <value>Unusta see brauser</value>
+    </data>
+    <data name="Disable2FA" xml:space="preserve">
+        <value>Eemalda kahe astmeline autentimine</value>
+    </data>
+    <data name="ResetRecoveryCodes" xml:space="preserve">
+        <value>Lähtesta taastamise koodid</value>
+    </data>
+    <data name="AuthenticatorApp" xml:space="preserve">
+        <value>Autentimise rakendus</value>
+    </data>
+    <data name="AddAuthenticatorApp" xml:space="preserve">
+        <value>Lisa autentimise rakendus</value>
+    </data>
+    <data name="SetupAuthenticatorApp" xml:space="preserve">
+        <value>Seadista autentimise rakendus</value>
+    </data>
+    <data name="ResetAuthenticatorApp" xml:space="preserve">
+        <value>Lähtesta autentimise rakendus</value>
+    </data>
+</root>

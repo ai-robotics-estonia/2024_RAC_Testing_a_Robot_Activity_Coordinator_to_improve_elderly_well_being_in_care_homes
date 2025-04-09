@@ -1,0 +1,19 @@
+services:
+  webapp-temi:
+    container_name: "webapp-temi"
+    build: .
+    restart: unless-stopped
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Production"
+      ConnectionStrings__DefaultConnection: "Host=helsinki.akaver.com;Database=temi;Username=postgres;Password=postgres"
+    networks:
+      - infra
+    volumes:
+      - webapp-temi-uploads:/app/wwwroot/uploads
+
+networks:
+  infra:
+    external: true
+
+volumes:
+  webapp-temi-uploads:

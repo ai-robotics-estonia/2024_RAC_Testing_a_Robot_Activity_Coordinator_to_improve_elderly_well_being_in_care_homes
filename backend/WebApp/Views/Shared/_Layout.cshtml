@@ -1,0 +1,155 @@
+﻿@using App.Domain.Identity
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@inject SignInManager<AppUser> _signInManager
+@inject UserManager<AppUser> _userManager
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - WebApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/PagedList.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/WebApp.styles.css" asp-append-version="true"/>
+    @await RenderSectionAsync("HeaderScripts", required: false)
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">temi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+
+                    @if (_signInManager.IsSignedIn(User) && User.IsInRole("user"))
+                    {
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Temi Admin
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <a class="dropdown-item text-dark" asp-area="User" asp-controller="Articles"
+                                   asp-action="Index">Articles</a>
+                                <a class="dropdown-item text-dark" asp-area="User" asp-controller="WebLinks"
+                                   asp-action="Index">WebLinks</a>
+                            </div>
+                        </li>
+                    }
+
+
+                    @if (_signInManager.IsSignedIn(User) && User.IsInRole("admin"))
+                    {
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Admin
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="LogEvents"
+                                   asp-action="Index">Robot Events</a>
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="LogEvents"
+                                   asp-action="Stats">Robot Event Stats</a>
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="Apps"
+                                   asp-action="Index">Apps</a>
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="AppVersions"
+                                   asp-action="Index">App Versions</a>
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="Maps"
+                                   asp-action="Index">Maps</a>
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="MapFloors"
+                                   asp-action="Index">Map Floors</a>
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="MapLocations"
+                                   asp-action="Index">Map Locations</a>
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="Robots"
+                                   asp-action="Index">Robots</a>
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="RobotMapApps"
+                                   asp-action="Index">Robot Maps Apps</a>
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="ArticleCategories"
+                                   asp-action="Index">Article Categories</a>
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="Articles"
+                                   asp-action="Index">Articles</a>
+                                <a class="dropdown-item text-dark" asp-area="Admin"
+                                   asp-controller="GreetingPhraseCategories" asp-action="Index">GreetingPhrase
+                                    Categories</a>
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="GreetingPhrases"
+                                   asp-action="Index">GreetingPhrases</a>
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="WebLinkCategories"
+                                   asp-action="Index">WebLink Categories</a>
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="WebLinks"
+                                   asp-action="Index">WebLinks</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="Lectures"
+                                   asp-action="Index">Lectures</a>
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="LectureAttendances"
+                                   asp-action="Index">Attendance</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-dark" asp-area="Identity" asp-controller="Organizations"
+                                   asp-action="Index">Organizations</a>
+                                <a class="dropdown-item text-dark" asp-area="Identity"
+                                   asp-controller="OrganizationAppUsers" asp-action="Index">Organization Users</a>
+                                <a class="dropdown-item text-dark" asp-area="Admin"
+                                   asp-controller="RobotMapAppOrganizations" asp-action="Index">Robot Maps App Org</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-dark" asp-area="Admin" asp-controller="News"
+                                   asp-action="Index">News</a>
+
+                                @*
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-dark" asp-area="Organiser" asp-controller="Teams" asp-action="Index">Teams</a>
+                                *@
+                            </div>
+                        </li>
+                    }
+                    
+                    @if (_signInManager.IsSignedIn(User) && User.IsInRole("sysadmin"))
+                    {
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                SysAdmin
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                <a class="dropdown-item text-dark" asp-area="SysAdmin" asp-controller="Home"
+                                   asp-action="Index">Home</a>
+                                <a class="dropdown-item text-dark" asp-area="SysAdmin" asp-controller="Users"
+                                   asp-action="Index">Users</a>
+                            </div>
+                        </li>
+                    }
+
+                    <partial name="_LanguageSelection"/>
+                </ul>
+                <partial name="_LoginPartial"/>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="border-top footer text-muted">
+    <div class="container">
+        &copy; 2024 - temi - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> | <a
+            href="/swagger/">Swagger</a> | @Thread.CurrentThread.CurrentUICulture.Name
+    </div>
+</footer>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+@await RenderSectionAsync("TinyMce", required: false)
+</body>
+</html>

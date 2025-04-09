@@ -1,0 +1,43 @@
+@model WebApp.Areas.Admin.ViewModels.LogEventDetailStatsViewModel
+@{
+    ViewData["Title"] = "Detailed Stats";
+}
+
+<h1>Temi event statistics</h1>
+
+<br/><br/>
+<h3>Key: @Model.Key</h3>
+<br/><br/>
+
+<h5>From: @Model.CreatedAtFrom</h5>
+<h5>To: @Model.CreatedAtTo</h5>
+<h5>Robot: @Model.RobotName</h5>
+<h5>Map: @Model.MapName</h5>
+<h5>App: @Model.AppName</h5>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>
+            Key
+        </th>
+        <th>
+            Count
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Stats)
+    {
+        <tr>
+            <td>
+                @item.Key
+            </td>
+            <td>
+                @item.Count
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+

@@ -1,0 +1,46 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="ConfigureAuthenticatorApp" xml:space="preserve">
+        <value>Konfigureeri autentimise rakendus</value>
+    </data>
+    <data name="HowToGetAuthenticatorApp" xml:space="preserve">
+        <value>Lae alla kahe astmelise autentimise rakendus näiteks Microsoft Authenticator
+                &lt;a href="https://go.microsoft.com/fwlink/?Linkid=825072"&gt;Android&lt;/a&gt; ja
+                &lt;a href="https://go.microsoft.com/fwlink/?Linkid=825073"&gt;iOS&lt;/a&gt; või
+                Google Authenticator 
+                &lt;a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&amp;amp;hl=en"&gt;Android&lt;/a&gt; ja
+                &lt;a href="https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8"&gt;iOS&lt;/a&gt;.</value>
+    </data>
+    <data name="LearnHowTo" xml:space="preserve">
+        <value>Tutvu kuidas &lt;a href="https://go.microsoft.com/fwlink/?Linkid=852423"&gt;aktiveerida QR koodi loomine&lt;/a&gt;.</value>
+    </data>
+    <data name="OnceYouHaveScanned" xml:space="preserve">
+        <value>Kui sa oled skänninud QR koodi või võtme ülevalt, siis su kahe astmelise autentimise rakendus annab sulle unikaalse koodi. Sisesta see kood allolevasse lahtrisse.</value>
+    </data>
+    <data name="ScanTheQRCode" xml:space="preserve">
+        <value>Skänni QR kood või sisesta see võti</value>
+    </data>
+    <data name="ToUseAuthenticatorApp" xml:space="preserve">
+        <value>Et võtta kasutusele autentimise rakendus, täida järgmised sammud:</value>
+    </data>
+    <data name="VerificationCode" xml:space="preserve">
+        <value>Kinnituskood</value>
+    </data>
+    <data name="Verify" xml:space="preserve">
+        <value>Kinnita</value>
+    </data>
+    <data name="IntoAuthenticatorApp" xml:space="preserve">
+        <value> kahe astmelise autentimise rakendusse. Tühikud ja suur- ja väiketähed ei mängi rolli.</value>
+    </data>
+</root>

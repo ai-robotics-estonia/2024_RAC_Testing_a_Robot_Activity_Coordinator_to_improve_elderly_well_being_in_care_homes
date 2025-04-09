@@ -1,0 +1,14 @@
+using System.ComponentModel.DataAnnotations;
+
+namespace App.DTO;
+
+public class MapLocationsDTO
+{
+    [MaxLength(128)]
+    public string MapIdCode { get; set; } = default!;
+
+    [MaxLength(256)]
+    public string MapName { get; set; } = default!;
+
+    public List<string> MapLocations { get; set; } = default!;
+}

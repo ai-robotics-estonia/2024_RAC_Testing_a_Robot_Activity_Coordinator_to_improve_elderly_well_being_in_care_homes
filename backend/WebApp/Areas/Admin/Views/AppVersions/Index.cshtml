@@ -1,0 +1,65 @@
+@model WebApp.Areas.Admin.ViewModels.AppVersionsIndexViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.VersionDetailInfos[0].AppVersion.ApkVersionCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VersionDetailInfos[0].AppVersion.ApkVersionName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VersionDetailInfos[0].AppVersion.UploadDT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VersionDetailInfos[0].AppVersion.App)
+            </th>
+            <th>
+                DT
+            </th>
+            <th>
+                Size
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.VersionDetailInfos) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppVersion.ApkVersionCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppVersion.ApkVersionName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppVersion.UploadDT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppVersion.App!.AppName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FileSize)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AppVersion.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AppVersion.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.AppVersion.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

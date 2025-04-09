@@ -1,0 +1,85 @@
+@using App.Domain
+@model WebApp.Areas.Admin.ViewModels.WebLinkViewModel
+
+<input type="hidden" asp-for="WebLink.WebLinkDisplayName" value="{}" />
+
+<div class="form-group">
+    <label asp-for="WebLink.WebLinkName" class="control-label"></label>
+    <input asp-for="WebLink.WebLinkName" class="form-control"/>
+    <span asp-validation-for="WebLink.WebLinkName" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="WebLinkDisplayName" class="control-label"></label>
+    <input asp-for="WebLinkDisplayName" class="form-control"/>
+    <span asp-validation-for="WebLinkDisplayName" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="WebLink.Uri" class="control-label"></label>
+    <textarea asp-for="WebLink.Uri" class="form-control" rows="5"></textarea>
+    <span asp-validation-for="WebLink.Uri" class="text-danger"></span>
+</div>
+
+<div class="form-group form-check">
+    <label class="form-check-label">
+        <input class="form-check-input"
+               asp-for="WebLink.IsIframe"/> @Html.DisplayNameFor(model => model.WebLink.IsIframe)
+    </label>
+</div>
+
+<div class="form-group">
+    <label asp-for="WebLink.ZoomFactor" class="control-label"></label>
+    <input asp-for="WebLink.ZoomFactor" class="form-control"/>
+    <span asp-validation-for="WebLink.ZoomFactor" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="WebLink.TextZoom" class="control-label"></label>
+    <input asp-for="WebLink.TextZoom" class="form-control"/>
+    <span asp-validation-for="WebLink.TextZoom" class="text-danger"></span>
+</div>
+
+<div class="form-group form-check">
+    <label class="form-check-label">
+        <input class="form-check-input"
+               asp-for="WebLink.LoadWithOverviewMode"/> @Html.DisplayNameFor(model => model.WebLink.LoadWithOverviewMode)
+    </label>
+</div>
+
+<div class="form-group form-check">
+    <label class="form-check-label">
+        <input class="form-check-input"
+               asp-for="WebLink.UseWideViewPort"/> @Html.DisplayNameFor(model => model.WebLink.UseWideViewPort)
+    </label>
+</div>
+
+<div class="form-group">
+    <label asp-for="WebLink.LayoutAlgorithm" class="control-label"></label>
+    <select asp-for="WebLink.LayoutAlgorithm" class="form-select" asp-items="@Html.GetEnumSelectList<EWebViewLayoutAlgorithm>()"></select>
+</div>
+
+<div class="form-group form-check">
+    <label class="form-check-label">
+        <input class="form-check-input"
+               asp-for="WebLink.BuiltInZoomControls"/> @Html.DisplayNameFor(model => model.WebLink.BuiltInZoomControls)
+    </label>
+</div>
+
+<div class="form-group form-check">
+    <label class="form-check-label">
+        <input class="form-check-input"
+               asp-for="WebLink.DisplayZoomControls"/> @Html.DisplayNameFor(model => model.WebLink.DisplayZoomControls)
+    </label>
+</div>
+
+<div class="form-group">
+    <label asp-for="WebLink.WebLinkCategoryId" class="control-label"></label>
+    <select asp-for="WebLink.WebLinkCategoryId" class="form-select"
+            asp-items="Model.WebLinkCategorySelectList"></select>
+</div>
+<div class="form-group">
+    <label asp-for="WebLink.OrganizationId" class="control-label"></label>
+    <select asp-for="WebLink.OrganizationId" class="form-select" asp-items="Model.OrganizationSelectList"></select>
+</div>
+

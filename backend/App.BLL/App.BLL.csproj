@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\App.DAL.EF\App.DAL.EF.csproj" />
+      <ProjectReference Include="..\App.DTO\App.DTO.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentResults" Version="3.16.0" />
+      <PackageReference Include="FluentResults.Extensions.FluentAssertions" Version="2.1.2" />
+      <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.2" />
+      <PackageReference Include="Microsoft.Net.Http.Headers" Version="9.0.2" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,71 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>aspnet-WebApp-A1778830-BB20-4DBE-9349-2D1788DF1FF1</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CsvHelper" Version="33.0.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="9.0.2" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.2" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="9.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.2">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+        <PackageReference Include="X.Extensions.PagedList.EF" Version="10.1.2"/>
+        <PackageReference Include="X.PagedList" Version="10.5.7" />
+        <PackageReference Include="X.Web.PagedList" Version="10.1.2"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
+        <PackageReference Include="AutoMapper" Version="14.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.2" />
+        <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0"/>
+        <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\App.BLL\App.BLL.csproj" />
+      <ProjectReference Include="..\App.DAL.EF\App.DAL.EF.csproj" />
+      <ProjectReference Include="..\App.DTO\App.DTO.csproj" />
+      <ProjectReference Include="..\Base.Helpers\Base.Helpers.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\App.DAL.EF\App.DAL.EF.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\OrganizationAppUsers\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\OrganizationAppUsers\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\OrganizationAppUsers\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\OrganizationAppUsers\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\OrganizationAppUsers\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Organizations\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Organizations\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Organizations\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Organizations\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\Organizations\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\LogEvents2\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\LogEvents2\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\LogEvents2\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\LogEvents2\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Admin\Views\LogEvents2\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Areas\User\Views\Articles\Create.cshtml" />
+      <AdditionalFiles Include="Areas\User\Views\Articles\Delete.cshtml" />
+      <AdditionalFiles Include="Areas\User\Views\Articles\Details.cshtml" />
+      <AdditionalFiles Include="Areas\User\Views\Articles\Edit.cshtml" />
+      <AdditionalFiles Include="Areas\User\Views\Articles\Index.cshtml" />
+      <AdditionalFiles Include="Areas\User\Views\Articles\_CreateEdit.cshtml" />
+    </ItemGroup>
+
+    
+</Project>

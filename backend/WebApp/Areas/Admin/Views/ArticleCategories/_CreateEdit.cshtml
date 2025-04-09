@@ -1,0 +1,18 @@
+@model WebApp.Areas.Admin.ViewModels.ArticleCategoryViewModel
+
+<input type="hidden" asp-for="ArticleCategory.CategoryDisplayName" value="{}"/>
+<div class="form-group">
+    <label asp-for="ArticleCategory.CategoryName" class="control-label"></label>
+    <input asp-for="ArticleCategory.CategoryName" class="form-control" />
+    <span asp-validation-for="ArticleCategory.CategoryName" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="CategoryDisplayName" class="control-label"></label>
+    <input asp-for="CategoryDisplayName" class="form-control" />
+    <span asp-validation-for="CategoryDisplayName" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="ArticleCategory.OrganizationId" class="control-label"></label>
+    <select asp-for="ArticleCategory.OrganizationId" asp-items="Model.OrganizationSelectList" class="form-select"></select>
+    <span asp-validation-for="ArticleCategory.OrganizationId" class="text-danger"></span>
+</div>

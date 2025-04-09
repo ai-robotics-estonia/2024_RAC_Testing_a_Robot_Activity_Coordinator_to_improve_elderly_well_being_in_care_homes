@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="TwoFactorAuthenticationTitle" xml:space="preserve">
+        <value>Two-factor authentication (2FA)</value>
+    </data>
+    <data name="YouHaveNoRecoveryCodesLeft" xml:space="preserve">
+        <value>You have no recovery codes left.</value>
+    </data>
+    <data name="YouMust" xml:space="preserve">
+        <value>You must</value>
+    </data>
+    <data name="GenerateANewSetOfRecoveryCodes" xml:space="preserve">
+        <value>generate a new set of recovery codes</value>
+    </data>
+    <data name="BeforeLoginWithRecoveryCode" xml:space="preserve">
+        <value> before you can log in with a recovery code.</value>
+    </data>
+    <data name="YouHaveOneRecoveryCodeLeft" xml:space="preserve">
+        <value>You have 1 recovery code left.</value>
+    </data>
+    <data name="YouCan" xml:space="preserve">
+        <value>You can</value>
+    </data>
+    <data name="YouHave" xml:space="preserve">
+        <value>You have</value>
+    </data>
+    <data name="RecoveryCodesLeft" xml:space="preserve">
+        <value> recovery codes left.</value>
+    </data>
+    <data name="YouShould" xml:space="preserve">
+        <value>You should</value>
+    </data>
+    <data name="ForgetThisBrowser" xml:space="preserve">
+        <value>Forget this browser</value>
+    </data>
+    <data name="Disable2FA" xml:space="preserve">
+        <value>Disable 2FA</value>
+    </data>
+    <data name="ResetRecoveryCodes" xml:space="preserve">
+        <value>Reset recovery codes</value>
+    </data>
+    <data name="AuthenticatorApp" xml:space="preserve">
+        <value>Authenticator app</value>
+    </data>
+    <data name="AddAuthenticatorApp" xml:space="preserve">
+        <value>Add authenticator app</value>
+    </data>
+    <data name="SetupAuthenticatorApp" xml:space="preserve">
+        <value>Setup authenticator app</value>
+    </data>
+    <data name="ResetAuthenticatorApp" xml:space="preserve">
+        <value>Reset authenticator app</value>
+    </data>
+</root>

@@ -1,0 +1,32 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Generate2FARecoveryCodes" xml:space="preserve">
+        <value>Genereeri kahe astmelise autentimise taastamise koodid</value>
+    </data>
+    <data name="GenerateRecoveryKeys" xml:space="preserve">
+        <value>Genereeri taastamise koodid</value>
+    </data>
+    <data name="GeneratingNewRecoveryCodes" xml:space="preserve">
+        <value>Genereerides uued taastamise koodid ei muuda see sinu võtmeid autentimise rakenduses. Kui sa soovid autentimise rakenduse võtit muutma, siis sa peaksid</value>
+    </data>
+    <data name="IfYouLoseYourDeviceAndRecoveryCodes" xml:space="preserve">
+        <value>Kui sa kaotad oma seadme ja sul pole taastamise koode, siis sa kaotad ligipääsu enda kasutajale.</value>
+    </data>
+    <data name="PutTheseCodesInSafePlace" xml:space="preserve">
+        <value>Pane need koodid turvalisse kohta</value>
+    </data>
+    <data name="ResetYourAuthenticatorKeys" xml:space="preserve">
+        <value>lähtestama autentimise võtmed.</value>
+    </data>
+</root>

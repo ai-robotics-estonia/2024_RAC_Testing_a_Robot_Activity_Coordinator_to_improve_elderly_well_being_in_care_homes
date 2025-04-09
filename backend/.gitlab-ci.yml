@@ -1,0 +1,16 @@
+stages:
+  - deploy
+
+deploy-job-main:
+  stage: deploy
+  script:
+    - docker compose -p temi -f docker-compose.yml up --build --remove-orphans --detach
+  environment:
+    name: staging
+    url: https://temi.akaver.com
+  only:
+    - main
+  tags:
+#    - helsinki-shared
+    - cm-shared
+

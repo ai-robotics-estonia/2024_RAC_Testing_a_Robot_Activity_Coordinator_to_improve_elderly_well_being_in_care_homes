@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Register" xml:space="preserve">
+        <value>Register</value>
+    </data>
+    <data name="AssociateAccount" xml:space="preserve">
+        <value>Associate your {0} account.</value>
+    </data>
+    <data name="AssociateAccountHelp" xml:space="preserve">
+        <value>You've successfully authenticated with &lt;strong&gt;{0}&lt;/strong&gt;.  Please enter an email address for this site below and click the Register button to finish logging in.</value>
+    </data>
+    <data name="Email" xml:space="preserve">
+        <value>E-mail</value>
+    </data>
+    <data name="GivenName" xml:space="preserve">
+        <value>First name</value>
+    </data>
+    <data name="Surname" xml:space="preserve">
+        <value>Last name</value>
+    </data>
+    <data name="DateOfBirth" xml:space="preserve">
+        <value>Date of birth</value>
+    </data>
+    <data name="Gender" xml:space="preserve">
+        <value>Gender</value>
+    </data>
+    <data name="Country" xml:space="preserve">
+        <value>Country</value>
+    </data>
+    <data name="PunchUnitEmitNo" xml:space="preserve">
+        <value>Emit number</value>
+    </data>
+    <data name="PunchUnitSiNo" xml:space="preserve">
+        <value>SportIdent number</value>
+    </data>
+    <data name="IOFCode" xml:space="preserve">
+        <value>International Orienteering Federation Code</value>
+    </data>
+    <data name="EOFCode" xml:space="preserve">
+        <value>Estonian Orienteering Federation Code</value>
+    </data>
+    <data name="Mandatory" xml:space="preserve">
+        <value>Mandatory</value>
+    </data>
+</root>

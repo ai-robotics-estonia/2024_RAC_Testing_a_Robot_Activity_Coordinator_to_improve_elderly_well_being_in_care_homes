@@ -1,0 +1,89 @@
+@model App.Domain.WebLink
+
+<dl class="row">
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.WebLinkName)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.WebLinkName)
+    </dd>
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.WebLinkDisplayName)
+    </dt>
+    <dd class="col-sm-10">
+        @Model.WebLinkDisplayName
+    </dd>
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Uri)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Uri)
+    </dd>
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.IsIframe)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.IsIframe)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.ZoomFactor)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.ZoomFactor)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.TextZoom)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.TextZoom)
+    </dd>
+
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.LoadWithOverviewMode)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.LoadWithOverviewMode)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.UseWideViewPort)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.UseWideViewPort)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.LayoutAlgorithm)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.LayoutAlgorithm)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.BuiltInZoomControls)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.BuiltInZoomControls)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.DisplayZoomControls)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.DisplayZoomControls)
+    </dd>
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.WebLinkCategory)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.WebLinkCategory!.CategoryName)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Organization)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Organization!.OrgName)
+    </dd>
+</dl>
+

@@ -1,0 +1,12 @@
+@model WebApp.Areas.Admin.ViewModels.RobotMapAppViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<partial name="_RobotMapAppDetails" model="Model" />
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

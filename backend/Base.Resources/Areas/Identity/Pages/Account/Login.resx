@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="UseLocalAccount" xml:space="preserve">
+        <value>Use a local account to log in.</value>
+    </data>
+    <data name="ForgotPassword" xml:space="preserve">
+        <value>Forgot your password?</value>
+    </data>
+    <data name="RgeisterNewUser" xml:space="preserve">
+        <value>Register as a new user</value>
+    </data>
+    <data name="ResendEmail" xml:space="preserve">
+        <value>Resend email confirmation</value>
+    </data>
+    <data name="LoginThirdParty" xml:space="preserve">
+        <value>Use another service to log in.</value>
+    </data>
+    <data name="NoThirdParty" xml:space="preserve">
+        <value>There are no external authentication services configured.</value>
+    </data>
+    <data name="LogIn" xml:space="preserve">
+        <value>Log in</value>
+    </data>
+    <data name="RememberMe" xml:space="preserve">
+        <value>Remember me?</value>
+    </data>
+    <data name="InvalidLoginAttempt" xml:space="preserve">
+        <value>Invalid login attempt.</value>
+    </data>
+    <data name="Password" xml:space="preserve">
+        <value>Password</value>
+    </data>
+    <data name="Email" xml:space="preserve">
+        <value>Email</value>
+    </data>
+</root>
