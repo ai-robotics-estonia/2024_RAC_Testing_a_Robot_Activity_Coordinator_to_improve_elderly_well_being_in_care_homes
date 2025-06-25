@@ -6,7 +6,7 @@
 | Development Team Lead Name | [Janika Leoste](https://www.etis.ee/CV/Janika_Leoste/eng)|
 | Development Team Lead E-mail | [janika.leoste@taltech.ee](janika.leoste@taltech.ee) |
 | Duration of the Demonstration Project | 07.2024-03.2025 |
-| Final Report | [Example_report.pdf](./final.pdf) |
+| Final Report | [final.pdf](./final.pdf) |
 
 
 # Description
