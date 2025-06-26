@@ -5,8 +5,7 @@
 | :--- | :--- |
 | Development Team Lead Name | [Janika Leoste](https://www.etis.ee/CV/Janika_Leoste/eng)|
 | Development Team Lead E-mail | [janika.leoste@taltech.ee](janika.leoste@taltech.ee) |
-| Duration of the Demonstration Project | 07.2024-03.2025 |
-| Final Report | [final.pdf](./final.pdf) |
+| Duration of the Demonstration Project | July 2024 - March 2025 |
 
 
 # Description
@@ -41,7 +40,7 @@ Adapted functionality:
 
 ### AI Technologies
 
-The application developed in the project utilizes following generally accepted AI algorithms and methods that let TEMI robot assistant to perform its functions: 
+The application validated in the project utilizes following generally accepted AI algorithms and methods that let TEMI robot assistant to perform its functions: 
 - Autonomous navigation: TEMI uses an efficient autonomous navigation algorithm to drive and control its movements, enabling it to understand and interact with its environment.
 - Voice interaction: TEMI is equipped with Auto Speech Recognition (ASR/STT), far-field voice technology, natural language processing (NLP), speech-to-text, and text-to-speech (TTS) engines. These allow TEMI to hear, identify, understand, and respond to user’s voice commands.
 
